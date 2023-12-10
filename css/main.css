@@ -1,0 +1,138 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;box-sizing: border-box;}
+img{
+  width: 100%; height: 100vh;vertical-align: top;
+}
+li{
+  list-style: none;
+}
+a{display: block;text-decoration: none;color: inherit;}
+body{
+  width: 100%;
+  height: 100vh;
+}
+.body-inner{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+/*명언*/
+#quote{
+  margin-bottom: 50px;
+}
+#quote blockquote{
+  color: #fff;
+  font-style: italic;
+}
+/*시계*/
+.time{
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 50px;
+}
+/*로그인*/
+.login-wrap{
+  z-index: 100;
+  position: fixed;
+  right: 450px;
+  bottom:100px;
+}
+.login-wrap input{
+  width: 400px;
+  height: 50px;
+  background: none;
+  color: #fff;
+  font-size: 30px;
+  border: 1px solid red;
+  text-align: center;
+}
+.login-wrap button{
+  width: 50px;
+  height: 50px;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  font-size: 16px;
+}
+#logout-btn{
+  position: fixed;
+  top: 50px;
+  right: 20px;
+}
+.login-wrap h1{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+}
+.blind{
+  display: none;
+}
+/*투두리스트*/
+.todo-title{
+position: relative;
+top: 10px;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  background:red;
+  box-shadow: 3px 3px black;
+}
+.todo-box{
+  width: 800px;
+  height: 300px;
+  padding-top: 20px;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 3px 3px black;
+}
+#todo-form{
+ position: absolute;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+}
+#todo-form input{
+  width: 400px;
+  text-align: center;
+}
+#todo-list li{
+  width: 400px;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: start;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace,serif;
+  background: #fff;
+}
+.trash-btn {
+  float: right;
+  background: transparent;
+    border: 0;
+    vertical-align: middle;
+    /*color: mediumaquamarine;*/
+    cursor: pointer;
+}
+.trash-img {
+    width: 20px;
+    height: 20px;
+}
+
+#weather{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+}
+.bg-images{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.bg-images img{
+  height: 700px;
+}
