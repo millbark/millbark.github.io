@@ -1,46 +1,59 @@
 @charset "UTF-8";
-*{margin: 0;padding: 0;box-sizing: border-box;}
-img{
-  width: 100%; height: 100vh;vertical-align: top;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-li{
-  list-style: none;
-}
-a{display: block;text-decoration: none;color: inherit;}
-body{
+img {
   width: 100%;
   height: 100vh;
+  vertical-align: top;
 }
-.body-inner{
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 10px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.body-inner {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-
 }
 /*명언*/
-#quote{
+#quote {
   margin-bottom: 50px;
+  font-size: 1.6rem;
 }
-#quote blockquote{
+#quote blockquote {
   color: #fff;
   font-style: italic;
 }
 /*시계*/
-.time{
+.time {
   margin-bottom: 50px;
   color: #fff;
   font-size: 50px;
 }
 /*로그인*/
-.login-wrap{
+.login-wrap {
   z-index: 100;
   position: fixed;
   right: 450px;
-  bottom:100px;
+  bottom: 100px;
 }
-.login-wrap input{
+.login-wrap input {
   width: 400px;
   height: 50px;
   background: none;
@@ -49,7 +62,7 @@ body{
   border: 1px solid red;
   text-align: center;
 }
-.login-wrap button{
+.login-wrap button {
   width: 50px;
   height: 50px;
   background: red;
@@ -58,82 +71,129 @@ body{
   border-radius: 100%;
   font-size: 16px;
 }
-#logout-btn{
+#logout-btn {
   position: fixed;
   top: 50px;
   right: 20px;
 }
-.login-wrap h1{
+.login-wrap h1 {
   color: #fff;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 600;
   font-style: italic;
-  font-family: 'Edwardian Script...',serif;
+  font-family: "Edwardian Script...", serif;
 }
-.blind{
+.blind {
   display: none;
 }
 /*투두리스트*/
-.todo-title{
-position: relative;
-top: 10px;
+.todo-title {
+  position: relative;
+  top: 10px;
   display: inline-block;
   padding: 0 10px;
   font-size: 20px;
   color: #fff;
-  background:red;
+  background: red;
   box-shadow: 3px 3px black;
 }
-.todo-box{
+.todo-box {
   width: 800px;
   height: 300px;
   padding-top: 20px;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, 0.5);
   box-shadow: 3px 3px black;
 }
-#todo-form{
- position: absolute;
- bottom: 20px;
- left: 50%;
- transform: translateX(-50%);
+#todo-form {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#todo-form input{
+#todo-form input {
   width: 400px;
   text-align: center;
 }
-#todo-list li{
+#todo-list li {
   width: 400px;
   margin: auto;
   margin-bottom: 5px;
   text-align: start;
   font-style: italic;
-  font-family: 'Courier New', Courier, monospace,serif;
+  font-family: "Courier New", Courier, monospace, serif;
   background: #fff;
 }
 .trash-btn {
   float: right;
   background: transparent;
-    border: 0;
-    vertical-align: middle;
-    /*color: mediumaquamarine;*/
-    cursor: pointer;
+  border: 0;
+  vertical-align: middle;
+  /*color: mediumaquamarine;*/
+  cursor: pointer;
 }
 .trash-img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-#weather{
+#weather {
   position: fixed;
   right: 20px;
   top: 20px;
   color: #fff;
 }
-.bg-images{
+.bg-images {
   position: fixed;
   bottom: 0;
   right: 0;
 }
-.bg-images img{
+.bg-images img {
   height: 700px;
+}
+
+@media (max-width: 768px) {
+  .body-inner {
+    top: 15%;
+  }
+  #quote {
+    width: 400px;
+    margin: 0 auto 10px;
+  }
+  .bg-images img {
+    height: 35vh;
+  }
+  .login-wrap {
+    width: 250px;
+    z-index: 100;
+    position: fixed;
+    left: 20px;
+    bottom: 250px;
+  }
+  .login-wrap h1 {
+    font-size: 4rem;
+  }
+  .login-wrap input {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    color: red;
+    font-size: 16px;
+    border: 1px solid red;
+  }
+  .todo-box {
+    width: 96%;
+  }
+  #todo-list li {
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+  }
+  #todo-form input {
+    width: 96%;
+    text-align: center;
+  }
+  .time {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
 }
