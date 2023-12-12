@@ -25,6 +25,7 @@ body {
   height: 100vh;
 }
 .body-inner {
+  width: 40%;
   position: absolute;
   top: 20%;
   left: 50%;
@@ -153,44 +154,55 @@ body {
 
 @media (max-width: 768px) {
   .body-inner {
-    top: 15%;
+    width: 80%;
   }
   #quote {
-    width: 400px;
     margin: 0 auto 10px;
+    font-size: 14px;
   }
   .bg-images img {
-    height: 35vh;
+    height: 30vh;
   }
   .login-wrap {
-    width: 250px;
+    width: 50%;
     z-index: 100;
     position: fixed;
-    left: 20px;
-    bottom: 250px;
+    right: 30%;
+    bottom: 7%;
   }
   .login-wrap h1 {
     font-size: 4rem;
   }
   .login-wrap input {
-    width: 150px;
+    width: 70%;
     height: 30px;
     background: #fff;
     color: red;
     font-size: 16px;
     border: 1px solid red;
   }
+  .login-wrap button {
+    width: 40px;
+    height: 40px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    font-size: 16px;
+  }
   .todo-box {
-    width: 96%;
+    width: 100%;
+    height: 35vh;
   }
   #todo-list li {
+    width: 100%;
     height: 25px;
     line-height: 25px;
     font-size: 16px;
   }
   #todo-form input {
-    width: 96%;
-    text-align: center;
+    width: 100%;
+    font-size: 10px;
   }
   .time {
     margin-bottom: 10px;
