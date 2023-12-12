@@ -34,7 +34,7 @@ body {
 }
 /*명언*/
 #quote {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 1.6rem;
 }
 #quote blockquote {
@@ -43,7 +43,7 @@ body {
 }
 /*시계*/
 .time {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #fff;
   font-size: 50px;
 }
@@ -114,13 +114,17 @@ body {
 #todo-form input {
   width: 400px;
   text-align: center;
+  margin: auto;
 }
 #todo-list li {
   width: 400px;
+  height: 20px;
+  line-height: 20px;
   margin: auto;
   margin-bottom: 5px;
   text-align: start;
   font-style: italic;
+  font-size: 16px;
   font-family: "Courier New", Courier, monospace, serif;
   background: #fff;
 }
@@ -171,13 +175,13 @@ body {
     bottom: 7%;
   }
   .login-wrap h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .login-wrap input {
     width: 70%;
     height: 30px;
     background: #fff;
-    color: red;
+    color: #000;
     font-size: 16px;
     border: 1px solid red;
   }
